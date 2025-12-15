@@ -46,8 +46,8 @@ $$\frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^{m} (f_{\mathbf{w},b}(\
 
 ### 4. **Gradient Descent Update**
 
-$$\mathbf{w} := \mathbf{w} - \alpha \frac{\partial J}{\partial \mathbf{w}}$$
-$$b := b - \alpha \frac{\partial J}{\partial b}$$
+$$\mathbf{w} = \mathbf{w} - \alpha \frac{\partial J}{\partial \mathbf{w}}$$
+$$b = b - \alpha \frac{\partial J}{\partial b}$$
 
 Where $\alpha$ = learning rate
 
@@ -57,7 +57,6 @@ Where $\alpha$ = learning rate
 - **Iterations**: 10,000
 - **Feature Normalization**: StandardScaler (mean=0, std=1)
 - **Initialization**: Weights = zeros, Bias = 0
-
 
 ## Implementation Details
 
@@ -79,6 +78,7 @@ The training process outputs:
 1. **Training Data Scatter Plots**: Shows relationship between each feature and target
 2. **Cost Convergence Plot**: Displays how loss decreases during training
 3. **Predictions vs Actual**: Overlay of predicted vs true performance values
+
 ## Results
 
 The model learns optimal parameters (w, b) through iterative gradient descent, minimizing the cost function. The final trained model creates a linear regression line that best fits the relationship between years of experience and salary.
